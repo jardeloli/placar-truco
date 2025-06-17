@@ -23,7 +23,7 @@
     display:flex;
     justify-content:center;
     align-items: center;
-    
+    margin: 10px;
     font-size: 30px;
     border-radius: 10px;
     text-transform:uppercase;
