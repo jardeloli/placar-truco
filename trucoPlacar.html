@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Placar para Truco</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="truco.css" />
+
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="vencedor">
+
+                <span id="txtVencedor"></span>
+
+            </div>
+            <br />
+            <div class="box">
+                
+                <div class="titulo">
+                    <img src="imagemTruco.png" width="80"  />
+                    <h1>Placar</h1>
+                    <img src="imagemTruco.png" width="80"  />
+                </div>
+                
+                <br />
+                <div class="caixas">
+
+                    <div class="caixaEsquerda">
+
+                        <div class="caixaEntrada">
+                            <input type="text" id="txtNome1" required/>
+                            <label for="txtDupla1">Dupla</label>
+                        </div>
+
+                        
+
+                        <div class="aumentarEdiminuir">
+
+                            <span class="spanTamanho1" id="txtSpan1">0</span>
+                            <button id="txtAumentar1"><span id="aumentar1">+1</span></button>
+                            <button id="txtDiminuir1"><span id="diminuir1">-1</span></button>
+                        </div>
+
+                    </div>
+
+                    <div class="caixaDireita">
+
+                        <div class="caixaEntrada">
+                            <input type="text" id="txtNome2" required />
+                            <label for="txtDupla2">Dupla</label>
+                        </div>
+
+                            
+
+                            <div class="aumentarEdiminuir">
+
+                                <span class="spanTamanho2" id="txtSpan2">0</span>
+                                <button id="txtAumentar2"><span id="aumentar2">+1</span></button>
+                                <button id="txtDiminuir2"><span id="diminuir2">-1</span></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                <div class="botao">
+                    <button id="btnTrucar"><span id="txtTrucar">Trucar + 3</span></button>
+                </div>
+            </div>
+        </div>
+
+        <script src="trucoPlacar.js"></script>
+    </body>
+</html>
