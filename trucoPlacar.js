@@ -494,6 +494,12 @@ window.onload = function (e) {
 
         }
 
+    btnCorrer.onclick = function (e) {
+
+
+
+    }
+
   
         
 
