@@ -19,7 +19,8 @@ window.onload = function (e) {
 
     var botaoTrucar = document.getElementById("btnTrucar");
     var aumentarTrucar = document.getElementById("txtTrucar");
-    var correr = document.getElementById("correr")
+    var correr = document.getElementById("correr");
+    var btnCorrer = document.getElementById("btnCorrer");
 
     spanVencedor.textContent = "";
 
