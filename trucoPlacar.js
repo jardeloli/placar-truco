@@ -21,6 +21,7 @@ window.onload = function (e) {
     var aumentarTrucar = document.getElementById("txtTrucar");
     var correr = document.getElementById("correr");
     var btnCorrer = document.getElementById("btnCorrer");
+    var spanCorrer = document.getElementById("spanCorrer")
 
     spanVencedor.textContent = "";
 
@@ -32,6 +33,8 @@ window.onload = function (e) {
 
     spanDiminuir2.textContent = - 1
     spanAumentar2.textContent = "+1";
+
+    spanCorrer.textContent = "Correr"
 
     aumentarTrucar.textContent = "Trucar + 3";
 
@@ -195,7 +198,7 @@ window.onload = function (e) {
                 spanAumentar1.textContent = "+" + 6
                 spanAumentar2.textContent = "+" + 6
                 aumentarTrucar.textContent = "Trucar + 9";
-               
+                spanCorrer.textContent = "Correr + 3"
 
                 txtAumentar1.onclick = function (e) {
                     var equipe1 = dupla1.value;
@@ -271,7 +274,7 @@ window.onload = function (e) {
             else if (aumentarTrucar.textContent == "Trucar + 9") {
                 spanAumentar1.textContent = "+" + 9
                 spanAumentar2.textContent = "+" + 9
-
+                spanCorrer.textContent = "Correr + 6"
                 aumentarTrucar.textContent = "Trucar + 12";
 
                 txtAumentar1.onclick = function (e) {
@@ -344,7 +347,7 @@ window.onload = function (e) {
             else if (aumentarTrucar.textContent == "Trucar + 12") {
                 spanAumentar1.textContent = "+" + 12
                 spanAumentar2.textContent = "+" + 12
-
+                spanCorrer.textContent = "Correr + 9"
                 aumentarTrucar.textContent = "1 Ponto";
 
                 txtAumentar1.onclick = function (e) {
@@ -424,7 +427,7 @@ window.onload = function (e) {
             else if (aumentarTrucar.textContent == "1 Ponto") {
                 spanAumentar1.textContent = "+" + 1
                 spanAumentar2.textContent = "+" + 1
-
+                
                 aumentarTrucar.textContent = "Trucar + 3";
                 correr.classList.remove("visivel");
                 correr.classList.add("oculto");
@@ -494,11 +497,11 @@ window.onload = function (e) {
 
         }
 
-    btnCorrer.onclick = function (e) {
+        btnCorrer.onclick = function (e) {
 
 
 
-    }
+        }
 
   
         
