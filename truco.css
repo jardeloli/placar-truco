@@ -4,6 +4,13 @@
     font-family:Arial;
 }
 
+@media(max-width: 500px){
+    .box {
+        min-width: 95%;
+        box-shadow: none
+    }
+}
+
 .container{
     min-width:100vw;
     min-height:100vh;
@@ -31,8 +38,7 @@
 
 .box {
     background: linear-gradient(black, red, black);
-    width: 100%;
-    min-height: 590px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
