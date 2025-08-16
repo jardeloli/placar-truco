@@ -504,12 +504,16 @@ window.onload = function (e) {
                 spanAumentar1.textContent = "+1";
                 spanAumentar2.textContent = "+1";
                 aumentarTrucar.textContent = "Trucar + 3";
+                correr.classList.remove("visivel")
+                correr.classList.add("oculto")
             }
 
             else if (spanCorrer.textContent == "Correr + 3") {
                 spanAumentar1.textContent = "+3";
                 spanAumentar2.textContent = "+3";
-                aumentarTrucar.textContent = "Trucar + 6"
+                aumentarTrucar.textContent = "Trucar + 6";
+                spanCorrer.textContent = "Correr"
+                
 
 
             }
@@ -517,7 +521,19 @@ window.onload = function (e) {
             else if (spanCorrer.textContent == "Correr + 6") {
                 spanAumentar1.textContent = "+6";
                 spanAumentar2.textContent = "+6";
-                aumentarTrucar.textContent = "Trucar + 9"
+                aumentarTrucar.textContent = "Trucar + 9";
+                spanCorrer.textContent = "Correr + 3"
+                
+
+
+            }
+
+            else if (spanCorrer.textContent == "Correr + 9") {
+                spanAumentar1.textContent = "+9";
+                spanAumentar2.textContent = "+9";
+                aumentarTrucar.textContent = "Trucar + 12"
+                spanCorrer.textContent = "Correr + 6"
+                
 
 
             }
