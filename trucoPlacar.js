@@ -499,8 +499,28 @@ window.onload = function (e) {
 
         btnCorrer.onclick = function (e) {
 
+            if (spanCorrer.textContent == "Correr") {
+
+                spanAumentar1.textContent = "+1";
+                spanAumentar2.textContent = "+1";
+                aumentarTrucar.textContent = "Trucar + 3";
+            }
+
+            else if (spanCorrer.textContent == "Correr + 3") {
+                spanAumentar1.textContent = "+3";
+                spanAumentar2.textContent = "+3";
+                aumentarTrucar.textContent = "Trucar + 6"
 
 
+            }
+
+            else if (spanCorrer.textContent == "Correr + 6") {
+                spanAumentar1.textContent = "+6";
+                spanAumentar2.textContent = "+6";
+                aumentarTrucar.textContent = "Trucar + 9"
+
+
+            }
         }
 
   
