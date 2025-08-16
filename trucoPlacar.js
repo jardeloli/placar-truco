@@ -22,6 +22,7 @@ window.onload = function (e) {
     var correr = document.getElementById("correr");
     var btnCorrer = document.getElementById("btnCorrer");
     var spanCorrer = document.getElementById("spanCorrer")
+    var div_vencedor = document.getElementById("spanVencedor");
 
     spanVencedor.textContent = "";
 
@@ -60,12 +61,21 @@ window.onload = function (e) {
         }
         else if (span.textContent == 11) {
             span.textContent = Number(span.textContent) + 1;
+            div_vencedor.classList.remove("vencedorOculto");
+            div_vencedor.classList.add("vencedor");
+            
+            
             spanVencedor.textContent += equipe1 + " vence"
+
+           
         }
         else {
             span.textContent = 0;
             spanVencedor.textContent = "";
+            div_vencedor.classList.remove("vencedor");
+            
         }
+       
     }
 
     txtDiminuir2.onclick = function (e) {
@@ -86,11 +96,15 @@ window.onload = function (e) {
         }
         else if (span2.textContent == 11) {
             span2.textContent = Number(span2.textContent) + 1;
+            div_vencedor.classList.remove("vencedorOculto");
+            div_vencedor.classList.add("vencedor");
             spanVencedor.textContent += equipe2 + " vence";
+
         }
         else {
             span2.textContent = 0;
             spanVencedor.textContent = "";
+            div_vencedor.classList.remove("vencedor");
         }
     }
 
@@ -125,6 +139,8 @@ window.onload = function (e) {
 
                             if (span.textContent >= 12) {
                                 span.textContent = 12;
+                                div_vencedor.classList.remove("vencedorOculto");
+                                div_vencedor.classList.add("vencedor");
                                 spanVencedor.textContent += equipe1 + " vence"
                             }
 
@@ -137,13 +153,15 @@ window.onload = function (e) {
                     }
                     else if (span.textContent == 11) {
                         span.textContent = Number(span.textContent) + 1;
+                        div_vencedor.classList.remove("vencedorOculto");
+                        div_vencedor.classList.add("vencedor");
                         spanVencedor.textContent += equipe1 + " vence"
 
                     }
                     else {
                         span.textContent = 0;
                         span2.textContent = 0;
-
+                        div_vencedor.classList.remove("vencedor");
                         spanVencedor.textContent = "";
                     }
 
@@ -169,6 +187,8 @@ window.onload = function (e) {
 
                             if (span2.textContent >= 12) {
                                 span2.textContent = 12;
+                                div_vencedor.classList.remove("vencedorOculto");
+                                div_vencedor.classList.add("vencedor");
                                 spanVencedor.textContent += equipe2 + " vence"
                             }
                         }
@@ -181,13 +201,15 @@ window.onload = function (e) {
                     }
                     else if (span2.textContent == 11) {
                         span2.textContent = Number(span2.textContent) + 1;
+                        div_vencedor.classList.remove("vencedorOculto");
+                        div_vencedor.classList.add("vencedor");
                         spanVencedor.textContent += equipe2 + " vence"
 
                     }
                     else {
                         span.textContent = 0;
                         span2.textContent = 0;
-                       
+                        div_vencedor.classList.remove("vencedor");
                         spanVencedor.textContent = "";
 
                     }
@@ -217,6 +239,8 @@ window.onload = function (e) {
 
                             if (span.textContent >= 12) {
                                 span.textContent = 12;
+                                div_vencedor.classList.remove("vencedorOculto");
+                                div_vencedor.classList.add("vencedor");
                                 spanVencedor.textContent += equipe1 + " vence"
                             }
 
@@ -229,12 +253,15 @@ window.onload = function (e) {
                     }
                     else if (span.textContent == 11) {
                         span.textContent = Number(span.textContent) + 1;
+                        div_vencedor.classList.remove("vencedorOculto");
+                        div_vencedor.classList.add("vencedor");
                         spanVencedor.textContent += equipe1 + " vence"
 
                     }
                     else {
                         span.textContent = 0;
                         span2.textContent = 0;
+                        div_vencedor.classList.remove("vencedor");
                         spanVencedor.textContent = "";
                     }
                 }
@@ -254,6 +281,7 @@ window.onload = function (e) {
 
                             if (span2.textContent >= 12) {
                                 span2.textContent = 12;
+
                                 spanVencedor.textContent += equipe2 + " vence"
                             }
                         }

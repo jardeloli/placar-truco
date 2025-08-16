@@ -23,6 +23,11 @@
 
    
 }
+
+.vencedorOculto{
+    display:none
+}
+
 .vencedor {
     
     height: 100px;

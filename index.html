@@ -11,31 +11,33 @@
     <body>
         <div class="container">
 
-            <div class="vencedor">
-
-                <span id="txtVencedor"></span>
-
-            </div>
+            
             <br />
             <div class="box">
-                
+
                 <div class="titulo">
-                    <img src="imagemTruco.png" width="80"  />
+                    <img src="imagemTruco.png" width="80" />
                     <h1>Placar</h1>
-                    <img src="imagemTruco.png" width="80"  />
+                    <img src="imagemTruco.png" width="80" />
                 </div>
-                
+
+                <div id="spanVencedor" class="vencedorOculto">
+
+                    <span id="txtVencedor"></span>
+
+                </div>
+
                 <br />
                 <div class="caixas">
 
                     <div class="caixaEsquerda">
 
                         <div class="caixaEntrada">
-                            <input type="text" id="txtNome1" required/>
+                            <input type="text" id="txtNome1" required />
                             <label for="txtDupla1">Dupla</label>
                         </div>
 
-                        
+
 
                         <div class="aumentarEdiminuir">
 
@@ -53,18 +55,18 @@
                             <label for="txtDupla2">Dupla</label>
                         </div>
 
-                            
 
-                            <div class="aumentarEdiminuir">
 
-                                <span class="spanTamanho2" id="txtSpan2">0</span>
-                                <button id="txtAumentar2"><span id="aumentar2">+1</span></button>
-                                <button id="txtDiminuir2"><span id="diminuir2">-1</span></button>
-                            </div>
+                        <div class="aumentarEdiminuir">
+
+                            <span class="spanTamanho2" id="txtSpan2">0</span>
+                            <button id="txtAumentar2"><span id="aumentar2">+1</span></button>
+                            <button id="txtDiminuir2"><span id="diminuir2">-1</span></button>
                         </div>
-
-
                     </div>
+
+
+                </div>
                 <div class="botao">
                     <button id="btnTrucar"><span id="txtTrucar">Trucar + 3</span></button>
                 </div>
