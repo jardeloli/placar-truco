@@ -31,7 +31,8 @@
 
 .box {
     background: linear-gradient(black, red, black);
-    width: 350px;
+    width: 100%;
+    min-height: 590px;
     display: flex;
     justify-content: center;
     align-items: center;
