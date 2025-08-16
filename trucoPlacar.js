@@ -105,7 +105,7 @@ window.onload = function (e) {
                 aumentarTrucar.textContent = "Trucar + 6";
                 correr.classList.remove("oculto")
                 correr.classList.add("visivel")
-                
+                spanCorrer.textContent = "Correr"
                 
 
 
