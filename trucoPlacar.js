@@ -118,6 +118,8 @@ window.onload = function (e) {
                             spanAumentar1.textContent = "+1";
                             spanAumentar2.textContent = "+1";
                             aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
 
                            
 
@@ -160,6 +162,8 @@ window.onload = function (e) {
                             spanAumentar1.textContent = "+" + 1;
                             spanAumentar2.textContent = "+" + 1;
                             aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
 
 
 
@@ -208,6 +212,8 @@ window.onload = function (e) {
                             spanAumentar1.textContent = "+" + 1;
                             spanAumentar2.textContent = "+" + 1;
                             aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
 
                             if (span.textContent >= 12) {
                                 span.textContent = 12;
@@ -243,6 +249,8 @@ window.onload = function (e) {
                             spanAumentar1.textContent = "+" + 1;
                             spanAumentar2.textContent = "+" + 1;
                             aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
 
                             if (span2.textContent >= 12) {
                                 span2.textContent = 12;
@@ -285,6 +293,8 @@ window.onload = function (e) {
                             spanAumentar1.textContent = "+" + 1;
                             spanAumentar2.textContent = "+" + 1;
                             aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
 
                             if (span.textContent >= 12) {
                                 span.textContent = 12;
@@ -317,6 +327,8 @@ window.onload = function (e) {
                             spanAumentar1.textContent = "+" + 1;
                             spanAumentar2.textContent = "+" + 1;
                             aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
 
                             if (span2.textContent >= 12) {
                                 span2.textContent = 12;
@@ -358,6 +370,8 @@ window.onload = function (e) {
                             spanAumentar1.textContent = "+" + 1;
                             spanAumentar2.textContent = "+" + 1;
                             aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
                             
                             if (span.textContent >= 12) {
                                 span.textContent = 12;
@@ -394,6 +408,8 @@ window.onload = function (e) {
                             spanAumentar1.textContent = "+" + 1;
                             spanAumentar2.textContent = "+" + 1;
                             aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
                             
                             if (span2.textContent >= 12) {
                                 span2.textContent = 12;
@@ -514,7 +530,87 @@ window.onload = function (e) {
                 aumentarTrucar.textContent = "Trucar + 6";
                 spanCorrer.textContent = "Correr"
                 
+                txtAumentar1.onclick = function (e) {
 
+                    var equipe1 = dupla1.value;
+                    if (span.textContent >= 0 && span.textContent < 11) {
+                        if (aumentarTrucar.textContent == "Trucar + 6") {
+                            span.textContent = Number(span.textContent) + 3;
+                            spanAumentar1.textContent = "+1";
+                            spanAumentar2.textContent = "+1";
+                            aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
+
+
+
+                            if (span.textContent >= 12) {
+                                span.textContent = 12;
+                                spanVencedor.textContent += equipe1 + " vence"
+                            }
+
+                        }
+                        else if (aumentarTrucar.textContent == "Trucar + 3") {
+                            span.textContent = Number(span.textContent) + 1;
+
+                        }
+
+                    }
+                    else if (span.textContent == 11) {
+                        span.textContent = Number(span.textContent) + 1;
+                        spanVencedor.textContent += equipe1 + " vence"
+
+                    }
+                    else {
+                        span.textContent = 0;
+                        span2.textContent = 0;
+
+                        spanVencedor.textContent = "";
+                    }
+
+
+                }
+
+                txtAumentar2.onclick = function (e) {
+                    var equipe2 = dupla2.value;
+
+                    if (span2.textContent >= 0 && span2.textContent < 11) {
+                        if (aumentarTrucar.textContent == "Trucar + 6") {
+                            span2.textContent = Number(span2.textContent) + 3;
+                            spanAumentar1.textContent = "+" + 1;
+                            spanAumentar2.textContent = "+" + 1;
+                            aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
+
+
+
+                            if (span2.textContent >= 12) {
+                                span2.textContent = 12;
+                                spanVencedor.textContent += equipe2 + " vence"
+                            }
+                        }
+                        else if (aumentarTrucar.textContent == "Trucar + 3") {
+                            span2.textContent = Number(span2.textContent) + 1;
+
+                        }
+
+
+                    }
+                    else if (span2.textContent == 11) {
+                        span2.textContent = Number(span2.textContent) + 1;
+                        spanVencedor.textContent += equipe2 + " vence"
+
+                    }
+                    else {
+                        span.textContent = 0;
+                        span2.textContent = 0;
+
+                        spanVencedor.textContent = "";
+
+                    }
+
+                }
 
             }
 
@@ -523,7 +619,77 @@ window.onload = function (e) {
                 spanAumentar2.textContent = "+6";
                 aumentarTrucar.textContent = "Trucar + 9";
                 spanCorrer.textContent = "Correr + 3"
-                
+
+                txtAumentar1.onclick = function (e) {
+                    var equipe1 = dupla1.value;
+                    if (span.textContent >= 0 && span.textContent < 11) {
+                        if (aumentarTrucar.textContent == "Trucar + 9") {
+                            span.textContent = Number(span.textContent) + 6;
+                            spanAumentar1.textContent = "+" + 1;
+                            spanAumentar2.textContent = "+" + 1;
+                            aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
+
+                            if (span.textContent >= 12) {
+                                span.textContent = 12;
+                                spanVencedor.textContent += equipe1 + " vence"
+                            }
+
+                        }
+                        else if (aumentarTrucar.textContent == "Trucar + 3") {
+                            span.textContent = Number(span.textContent) + 1;
+
+                        }
+
+                    }
+                    else if (span.textContent == 11) {
+                        span.textContent = Number(span.textContent) + 1;
+                        spanVencedor.textContent += equipe1 + " vence"
+
+                    }
+                    else {
+                        span.textContent = 0;
+                        span2.textContent = 0;
+                        spanVencedor.textContent = "";
+                    }
+                }
+
+                txtAumentar2.onclick = function (e) {
+
+                    var equipe2 = dupla2.value;
+
+                    if (span2.textContent >= 0 && span2.textContent < 11) {
+                        if (aumentarTrucar.textContent == "Trucar + 9") {
+                            span2.textContent = Number(span2.textContent) + 6;
+                            spanAumentar1.textContent = "+" + 1;
+                            spanAumentar2.textContent = "+" + 1;
+                            aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
+
+                            if (span2.textContent >= 12) {
+                                span2.textContent = 12;
+                                spanVencedor.textContent += equipe2 + " vence"
+                            }
+                        }
+                        else if (aumentarTrucar.textContent == "Trucar + 3") {
+                            span2.textContent = Number(span2.textContent) + 1;
+
+                        }
+
+                    }
+                    else if (span2.textContent == 11) {
+                        span2.textContent = Number(span2.textContent) + 1;
+                        spanVencedor.textContent += equipe2 + " vence"
+                    }
+                    else {
+                        span.textContent = 0;
+                        span2.textContent = 0;
+                        spanVencedor.textContent = "";
+                    }
+
+                }
 
 
             }
@@ -534,7 +700,72 @@ window.onload = function (e) {
                 aumentarTrucar.textContent = "Trucar + 12"
                 spanCorrer.textContent = "Correr + 6"
                 
+                txtAumentar1.onclick = function (e) {
+                    var equipe1 = dupla1.value;
+                    if (span.textContent >= 0 && span.textContent < 11) {
+                        if (aumentarTrucar.textContent == "Trucar + 12") {
+                            span.textContent = Number(span.textContent) + 9;
+                            spanAumentar1.textContent = "+" + 1;
+                            spanAumentar2.textContent = "+" + 1;
+                            aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
 
+                            if (span.textContent >= 12) {
+                                span.textContent = 12;
+                                spanVencedor.textContent += equipe1 + " vence"
+                            }
+                        }
+                        else if (aumentarTrucar.textContent == "Trucar + 3") {
+                            span.textContent = Number(span.textContent) + 1;
+
+                        }
+                    }
+                    else if (span.textContent == 11) {
+                        span.textContent = Number(span.textContent) + 1;
+                        spanVencedor.textContent += equipe1 + " vence"
+                    }
+                    else {
+                        span.textContent = 0;
+                        span2.textContent = 0;
+                        spanVencedor.textContent = "";
+                    }
+                }
+
+                txtAumentar2.onclick = function (e) {
+
+                    var equipe2 = dupla2.value;
+
+                    if (span2.textContent >= 0 && span2.textContent < 11) {
+                        if (aumentarTrucar.textContent == "Trucar + 12") {
+                            span2.textContent = Number(span2.textContent) + 9;
+                            spanAumentar1.textContent = "+" + 1;
+                            spanAumentar2.textContent = "+" + 1;
+                            aumentarTrucar.textContent = "Trucar + 3";
+                            correr.classList.remove("visivel")
+                            correr.classList.add("oculto")
+
+                            if (span2.textContent >= 12) {
+                                span2.textContent = 12;
+                                spanVencedor.textContent += equipe2 + " vence"
+                            }
+                        }
+                        else if (aumentarTrucar.textContent == "Trucar + 3") {
+                            span2.textContent = Number(span2.textContent) + 1;
+
+                        }
+                    }
+                    else if (span2.textContent == 11) {
+                        span2.textContent = Number(span2.textContent) + 1;
+                        spanVencedor.textContent += equipe2 + " vence"
+                    }
+                    else {
+                        span.textContent = 0;
+                        span2.textContent = 0;
+                        spanVencedor.textContent = "";
+                    }
+
+                }
 
             }
         }
