@@ -213,7 +213,10 @@ label{
 }
 
 #btnCorrer {
-    width: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 115px;
     height: 30px;
     font-size: 17px;
     font-weight: 600;
