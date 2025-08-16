@@ -195,3 +195,17 @@ label{
 .visivel{
     display: inline-block
 }
+
+#btnCorrer {
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    background: red;
+    color: white;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor:pointer;
+    
+}
